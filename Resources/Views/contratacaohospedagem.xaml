@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApphotel.Resources.Views.contratacaohospedagem"
              Title="contratacaohospedagem"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"></ContentPage>
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
@@ -13,8 +13,7 @@
         Text="Calculo da Diária"
         FontFamily="Kalambold" 
         FontSize="50"
-            TextColor="LightPink"
-            />
+            TextColor="LightPink"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -94,11 +93,10 @@
                                  Format="dd/MM/yyyy"/>
                     
                 </HorizontalStackLayout>
-                <Button Text="Sobre"
+                <Button x:Name="btn_contratar" Text="Contratar Hospedagem" 
                         BackgroundColor="PaleTurquoise"
                         TextColor="Black"
                         FontFamily="Kalambold"/>
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
-</ContentPage>
