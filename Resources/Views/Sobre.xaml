@@ -45,6 +45,11 @@
                     TextColor="DarkMagenta"/>
 
         </VerticalStackLayout>
+        <Button Text="Voltar"
+                Padding="10"
+                BackgroundColor="MediumVioletRed"
+                Clicked="ButtonVoltar_Clicked"></Button>
+       
     </VerticalStackLayout>
         
 </ContentPage>

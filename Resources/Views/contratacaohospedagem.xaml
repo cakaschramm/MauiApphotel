@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApphotel.Resources.Views.contratacaohospedagem"
              Title="contratacaohospedagem"
-             Shell.NavBarIsVisible="False"></ContentPage>
-
+             Shell.NavBarIsVisible="False">
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
                          Spacing="10"
@@ -59,15 +58,12 @@
                                FontFamily="Kalambold"/>
 
                         <Picker x:Name="pck_quarto"
+                                ItemDisplayBinding="{Binding Descricao}"
                                 Title="Selecione sua Acomodação"
                                 />
                     </VerticalStackLayout>                
                 </Frame>
-                <Button Text="Avançar"
-                        BackgroundColor="PaleTurquoise"
-                        TextColor="black"
-                        FontFamily="Kalambold"/>
-                
+                           
             </VerticalStackLayout>
         </Frame>
        
@@ -85,7 +81,8 @@
           HorizontalOptions="CenterAndExpand">
                     <Label Text="Check-in:"/>
                     <DatePicker x:Name="dtpck_checkin"
-                    Format="dd/MM/yyyy"/> 
+                    Format="dd/MM/yyyy"
+                                DateSelected="dtpck_checkin_DateSelected"/> 
                 </HorizontalStackLayout>
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Check-out:"/>
@@ -94,9 +91,16 @@
                     
                 </HorizontalStackLayout>
                 <Button x:Name="btn_contratar" Text="Contratar Hospedagem" 
+                        Clicked="btn_contratar_Clicked"
                         BackgroundColor="PaleTurquoise"
                         TextColor="Black"
                         FontFamily="Kalambold"/>
+                <Button x:Name="btnsobre" Text="Sobre" Grid.Row="1" Grid.Column="0" Clicked="btnsobre_Clicked"
+                           BackgroundColor="PaleTurquoise"
+   TextColor="Black"
+   FontFamily="Kalambold"/>
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
+
+</ContentPage>

@@ -12,10 +12,5 @@
         ContentTemplate="{DataTemplate Views:contratacaohospedagem}"
         Route="MainPage" />
 
-
-    <ShellContent
-        Title="Sobre"
-        ContentTemplate="{DataTemplate Views:Sobre}"
-        Route="sobre" />
-
 </Shell>
+    
