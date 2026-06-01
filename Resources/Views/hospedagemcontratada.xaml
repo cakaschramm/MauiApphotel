@@ -16,20 +16,36 @@
                HorizontalOptions="Center"
                VerticalOptions="Center">
 
-            <VerticalStackLayout Spacing="10">
+            <VerticalStackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="{Binding QuartoSelecionado.Descricao}"
+               TextColor="SaddleBrown"
+               FontFamily="Kalam"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+                
+               <Label Text="{Binding DataCheckIn, StringFormat='Data Check-in: {0:dd/MM/yyyy}'}"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+                      TextColor="DarkGrey"
+                      FontSize="15"/>
 
-                <Label Text="Sucesso!"
-                       TextColor="PaleVioletRed"
+                <Label Text="{Binding DataCheckOut, StringFormat='Data Check-out: {0:dd/MM/yyyy}'}"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+                       TextColor="DarkGrey"
+                       FontSize="15"/>
+                
+                <Label Text="Hospedagem contratada com sucesso!"
+                       TextColor="SaddleBrown"
                        FontSize="20"
-                       HorizontalOptions="Center"/>
-
-                <Label Text="Hospedagem contratada com sucesso"
-                       TextColor="PaleVioletRed"
-                       HorizontalOptions="Center"/>
+                       HorizontalOptions="Center"
+                       FontFamily="Kalam"/>
 
                 <Button Text="Voltar"
                         Clicked="ButtonVoltar_Clicked"
-                        BackgroundColor="LightBlue"/>
+                        TextColor="Brown"
+             
+                        BackgroundColor="RosyBrown"/>
 
             </VerticalStackLayout>
 

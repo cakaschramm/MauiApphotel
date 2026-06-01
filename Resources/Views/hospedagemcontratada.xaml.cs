@@ -18,4 +18,9 @@ public partial class hospedagemcontratada : ContentPage
             Console.WriteLine(ex.Message);
         }
     }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
